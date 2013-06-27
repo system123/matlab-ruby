@@ -50,6 +50,11 @@ Simply do the following, after installing MATLAB:
   * ruby setup.rb setup
   * ruby setup.rb install
 
+If you are using OSX please make sure your Matlab paths are the same as the ones in the ext/matlab_api/extconf.rb file and add the following two lines to your ~/.bash_profile file:
+
+export PATH=/Applications/MATLAB_R2012a.app/bin:$PATH
+export DYLD_LIBRARY_PATH=/Applications/MATLAB_R2012a.app/bin/maci64:$DYLD_LIBRARY_PATH
+
 Alternatively, you can download and install the RubyGem package for
 matlab-ruby (you must have RubyGems and MATLAB installed, first):
 
